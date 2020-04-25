@@ -13,37 +13,40 @@
 		android:orientation="horizontal">
 
 		<TextView
-			android:layout_width="0dp"
+			android:layout_width="@dimen/none"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:background="@android:color/holo_orange_light"
+			android:background="@color/orange"
 			android:gravity="center"
-			android:paddingTop="40dp"
-			android:paddingBottom="40dp"
+			android:paddingTop="@dimen/ml"
+			android:paddingBottom="@dimen/ml"
 			android:text="@string/textview1"
-			android:textColor="@android:color/white" />
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/textsizem"/>
 
 		<TextView
-			android:layout_width="0dp"
+			android:layout_width="@dimen/none"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:background="@android:color/holo_green_light"
+			android:background="@color/greenLight"
 			android:gravity="center"
-			android:paddingTop="40dp"
-			android:paddingBottom="40dp"
+			android:paddingTop="@dimen/ml"
+			android:paddingBottom="@dimen/ml"
 			android:text="@string/textview2"
-			android:textColor="@android:color/black" />
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/textsizem"/>
 
 		<TextView
-			android:layout_width="0dp"
+			android:layout_width="@dimen/none"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:background="@android:color/holo_blue_light"
+			android:background="@color/greenBlue"
 			android:gravity="center"
-			android:paddingTop="40dp"
-			android:paddingBottom="40dp"
+			android:paddingTop="@dimen/ml"
+			android:paddingBottom="@dimen/ml"
 			android:text="@string/textview3"
-			android:textColor="@android:color/white" />
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/textsizem"/>
 
 	</LinearLayout>
 
@@ -54,33 +57,35 @@
 		android:orientation="horizontal">
 
 		<Button
-			android:layout_width="0dp"
+			android:layout_width="@dimen/none"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:background="@android:color/holo_blue_light"
+			android:background="@color/greenBlue"
 			android:gravity="center"
-			android:paddingTop="40dp"
-			android:paddingBottom="40dp"
+			android:paddingTop="@dimen/l"
+			android:paddingBottom="@dimen/l"
 			android:text="@string/button1"
-			android:textColor="@android:color/white" />
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/textsizes"/>
 
 		<ImageView
-			android:layout_width="0dp"
+			android:layout_width="@dimen/none"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
 			android:gravity="center"
 			android:src="@drawable/palette" />
 
 		<Button
-			android:layout_width="0dp"
+			android:layout_width="@dimen/none"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
-			android:background="@android:color/holo_green_dark"
+			android:background="@color/greenDarker"
 			android:gravity="center"
-			android:paddingTop="40dp"
-			android:paddingBottom="40dp"
+			android:paddingTop="@dimen/l"
+			android:paddingBottom="@dimen/l"
 			android:text="@string/button2"
-			android:textColor="@android:color/white" />
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/textsizes"/>
 
 	</LinearLayout>
 
@@ -89,18 +94,18 @@
 		android:layout_height="wrap_content"
 		android:background="@android:color/holo_orange_light"
 		android:orientation="vertical"
-		android:paddingTop="16dp"
-		android:paddingBottom="16dp">
+		android:paddingTop="@dimen/m"
+		android:paddingBottom="@dimen/m">
 
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="0dp"
+			android:layout_height="@dimen/none"
 			android:layout_weight="1"
 			android:hint="@string/edittext1" />
 
 		<EditText
 			android:layout_width="match_parent"
-			android:layout_height="0dp"
+			android:layout_height="@dimen/none"
 			android:layout_weight="1"
 			android:hint="@string/edittext2" />
 
@@ -110,7 +115,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="vertical"
-		android:background="@android:color/holo_blue_light">
+		android:background="@color/greenBlue">
 
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -122,50 +127,55 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="@string/checkbox1" />
+				android:text="@string/checkbox1"
+				android:textSize="@dimen/textsizem"/>
 
 			<Switch
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_weight="2"
-				android:text="@string/switch1" />
+				android:text="@string/switch1"
+				android:textSize="@dimen/textsizes"/>
 		</LinearLayout>
 
 
 		<View
 			android:layout_width="match_parent"
-			android:layout_height="1dp"
+			android:layout_height="@dimen/xxs"
 			android:background="@android:color/holo_purple" />
 
 		<RatingBar
 			style="?android:attr/ratingBarStyleSmall"
 			android:layout_width="wrap_content"
-			android:layout_height="24dp"
-			android:layout_margin="16dp"
+			android:layout_height="@dimen/s"
+			android:layout_margin="@dimen/xs"
 			android:isIndicator="false"
 			android:numStars="5"
 			android:rating="1"
-			android:stepSize="1" />
+			android:stepSize="1"
+			android:theme="@style/RatingBar"/>
 
 		<View
 			android:layout_width="match_parent"
-			android:layout_height="1dp"
+			android:layout_height="@dimen/xxs"
 			android:background="@android:color/holo_purple" />
 
 		<RadioGroup
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:layout_margin="16dp">
+			android:layout_margin="@dimen/xs">
 
 			<RadioButton
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Yes" />
+				android:text="@string/yes"
+				android:textSize="@dimen/textsizem"/>
 
 			<RadioButton
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="No" />
+				android:text="@string/no"
+				android:textSize="@dimen/textsizem"/>
 		</RadioGroup>
 	</LinearLayout>
 
